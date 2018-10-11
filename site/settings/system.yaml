@@ -1,0 +1,8 @@
+app_key: lZUqL1ykYXlTMoZoj2tr7T1thdDo9zFu
+yaml_parser: symfony
+locales:
+  en:
+    full: en_US
+    name: English
+    url: 'https://suppenhimmel.dev/'
+timezone: UTC
