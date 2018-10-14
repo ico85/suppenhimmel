@@ -1,0 +1,96 @@
+@import "normalize";
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+$font-family-headline: 'Mali', serif;
+/* mali-regular - latin */
+@font-face {
+  font-family: 'Mali';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../css/fonts/mali-v1-latin/mali-v1-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Mali Regular'), local('Mali-Regular'),
+  url('../css/fonts/mali-v1-latin/mali-v1-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../css/fonts/mali-v1-latin/mali-v1-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../css/fonts/mali-v1-latin/mali-v1-latin-regular.woff') format('woff'), /* Modern Browsers */
+  url('../css/fonts/mali-v1-latin/mali-v1-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../css/fonts/mali-v1-latin/mali-v1-latin-regular.svg#Mali') format('svg'); /* Legacy iOS */
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-family-headline;
+}
+
+.header-nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.header-nav__menu {
+  padding: 20px;
+  border: 4px dashed #a26d01;
+  background: #ffa500eb;
+  border-radius: 50px;
+}
+
+.header-nav__menu-link {
+  font-family: $font-family-headline;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+.stage {
+  background-image: url("../img/stage-bg.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 90vh;
+}
+
+.logo {
+  width: 200px;
+  display: block;
+  margin-bottom: 20px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.section {
+  background: beige;
+  padding: 50px;
+
+}
+
+body {
+  font-family: $font-family-headline;
+  line-height: 1.5;
+}
+
+.tagesangebot {
+  background-color: white;
+  padding: 20px;
+  border: 4px dashed black;
+  border-radius: 50px;
+  width: 700px;
+  margin: 0 auto;
+  margin-top: -164px;
+
+  h3 {
+    text-align: center;
+  }
+}

@@ -16,7 +16,8 @@ elixir.config.publicPath = './';
  */
 
 elixir(function(mix) {
-    mix.sass(theme + '.scss', 'css/' + theme + '.css');
+    mix.sass(theme + '.scss', 'css/' + theme + '.css')
+        .browserSync({proxy: 'suppenhimmel.dev'});
 
     // mix.version('css/' + theme + '.css');
 });
